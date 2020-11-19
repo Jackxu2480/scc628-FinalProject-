@@ -15,6 +15,13 @@ Pipline {
             }
 
         }
+        
+        stage('test'){
+        
+        		sh 'mvn test'
+            
+        }
+
 
     }
 
