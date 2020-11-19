@@ -17,11 +17,20 @@ Pipline {
         }
         
         stage('test'){
-        
+        	steps{
+        	   
         		sh 'mvn test'
-            
+            }
         }
 
+		stage('Deploy'){
+		    
+		    steps{
+		        
+		        echo 'scc628'
+		    }
+
+		}
 
     }
 
